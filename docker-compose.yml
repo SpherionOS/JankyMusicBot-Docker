@@ -1,0 +1,9 @@
+---
+version: "3"
+services:
+  jmusicbot:
+    image: twosevenska/jmusicbot:0.3.9
+    container_name: jmusicbot
+    volumes:
+      - /path/to/config.txt:/bot/config.txt
+    restart: unless-stopped
